@@ -1,0 +1,17 @@
+a {
+    font-size: 20px;
+    color:lightslategrey;
+}
+
+#nav-menu ul{
+    position: absolute;
+    display: flex;
+    padding: 5px;
+    gap: 20px;
+
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
