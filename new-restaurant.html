@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    
+     <!-- navigation Bar -->
+     <nav class="bg-dark text-white py-3">
+        <div class="container mx-auto d-flex justify-content-between align-items-center">
+            <h1 class="h3 fw-bold m-2">Directorio de restaurantes</h1>
+            <div class="d-flex gap-4 m-2 p-1 ">
+                <a href="" class="link-secondary">Home</a>
+                <a href="" class="link-secondary">Search</a>
+                <a href="" class="link-secondary bg-hover">New/Add</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-mx-auto mt-2">
+       
+
+        <!-- Profe, todo esto lo tuve que investigar porque no sabía cómo hacerlo -->
+        <div class="container my-4">
+            <h3 class="text-center fw-bold mb-5">Agregar Nuevo Restaurante</h3>
+            <form id="restaurantForm">
+                <div class="mb-3 fw-bold">
+                    <label for="name" class="form-label">Nombre del Restaurante</label>
+                    <input type="text" class="form-control" id="name" placeholder="Ejemplo: Pizza Pixie" required>
+                </div>
+                <div class="mb-3 fw-bold">
+                    <label for="description" class="form-label">Descripción</label>
+                    <textarea class="form-control" id="description" rows="2" placeholder="Descripción breve" required></textarea>
+                </div>
+                <div class="mb-3 fw-bold">
+                    <label for="address" class="form-label">Dirección</label>
+                    <input type="text" class="form-control" id="address" placeholder="Ejemplo: Calle 85#34-89sur" required>
+                </div>
+                <div class="mb-3 fw-bold">
+                    <label for="imageUrl" class="form-label">URL de la Imagen</label>
+                    <input type="text" class="form-control" id="imageUrl" placeholder="URL de la imagen del restaurante" required>
+                </div>
+                <button type="submit" class="btn btn-success">Agregar Restaurante</button>
+            </form>
+        </div>
+    
+        <div class="row g-4 p-3 m-4 justify-content-center" id="restaurantList">
+            <!-- Aquí deberían aparecer los restaurantes agregados -->
+        </div>
+    </div>
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+    
+</body>
+
+</html>

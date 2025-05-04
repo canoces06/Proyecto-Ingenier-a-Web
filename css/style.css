@@ -1,3 +1,8 @@
+:root{
+    --primar-color:#6DAEC7;
+    --secondary-color:#EDFFFA;
+}
+
 a {
     font-size: 20px;
     color:lightslategrey;
@@ -14,4 +19,15 @@ a {
 .wrapper {
     display: flex;
     justify-content: center;
+}
+
+img-cover{
+    width: 180px; 
+    height: 200px;
+    object-fit: cover;
+
+}
+
+.mine{
+    background-color: beige;
 }
